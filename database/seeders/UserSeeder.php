@@ -17,8 +17,8 @@ class UserSeeder extends Seeder
     {
         // Default credentials
         \App\Models\User::insert([
-            [ 
-                'name' => 'Left4code',
+            [
+                'name' => 'admin',
                 'email' => 'midone@left4code.com',
                 'email_verified_at' => now(),
                 'password' => '$2y$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC/.og/at2.uheWG/igi', // password
@@ -27,26 +27,8 @@ class UserSeeder extends Seeder
                 'role' => 'su',
                 'remember_token' => Str::random(10)
             ],
-            [ 
-                'name' => 'Aisyah',
-                'email' => 'aisyah@left4code.com',
-                'email_verified_at' => now(),
-                'password' => '$2y$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC/.og/at2.uheWG/igi', // password
-                'gender' => 'perempuan',
-                'active' => 1,
-                'role' => 'koordinator',
-                'remember_token' => Str::random(10)
-            ],
-            [ 
-                'name' => 'Alvi',
-                'email' => 'alvi@left4code.com',
-                'email_verified_at' => now(),
-                'password' => '$2y$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC/.og/at2.uheWG/igi', // password
-                'gender' => 'perempuan',
-                'active' => 1,
-                'role' => 'admin',
-                'remember_token' => Str::random(10)
-            ]
+
+
         ]);
 
         // Fake users
